@@ -1,0 +1,87 @@
+.modal {
+  height: 100vh;
+  width: 100vw;
+  //background-color: rgba(0,0,0,0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .modal-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    border-radius: 12px;
+    background-color: aliceblue;
+    height: 500px;
+    width: 700px;
+    z-index: 100;
+    .modal-image__block {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+      img {
+        width: 300px;
+        height: 300px;
+      }
+    }
+    .modal-info {
+      position: relative;
+      width: 80%;
+      height: 100%;
+      padding: 10px 10px;
+      border-radius: 20px;
+      * { margin-bottom: 15px; }
+      p:first-child {
+        font-size: 24px;
+        font-weight: 500;
+      }
+      span {
+        font-size: 17px;
+        color: rgb(92, 99, 112);
+      }
+      .pizza-setting {
+        div {
+          display: flex;
+          align-items: center;
+          width: 100%;
+          height: 30px;
+          background: linear-gradient(90deg, rgba(242,233,233,1) 0%, rgba(223,223,255,1) 35%, rgba(255,255,255,1) 100%);
+          border-radius: 20px;
+          button {
+            width: 100%;
+            margin: auto 0;
+            border: none;
+            font-size: 17px;
+            background-color: transparent;
+          }
+          .selected {
+            background-color: white;
+            box-shadow: black;
+            border-radius: 10px;
+            padding: 5px;
+          }
+        }
+      }
+      .add-to-cart {
+        position: absolute;
+        margin-top: 20px;
+        left: 10%;
+        font-size: 16px;
+        border: 0.5px solid black;
+        color: aliceblue;
+        background-color: black;
+        padding: 5px 15px;
+        border-radius: 20px;
+        &:hover {
+          background-color: white;
+          color: black;
+        }
+      }
+    }
+  }
+}

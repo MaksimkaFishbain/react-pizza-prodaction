@@ -1,0 +1,81 @@
+.manipulation-block {
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 0 70px 0;
+
+  .filter {
+    width: 340px;
+    height: 193px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+
+    .filter-title {
+      width: 100%;
+      height: 25%;
+      background-color: #611E2A;
+      color: #FFFFFF;
+      font-size: 16px;
+      text-align: center;
+      padding-top: 12px;
+      border-radius: 20px 20px 0 0;
+    }
+
+    #fst-filter, #sec-filter {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      height: 75%;
+      list-style-type: none;
+
+      li {
+        position: relative;
+        padding-bottom: 10px;
+
+        input[type="radio"] {
+          position: absolute;
+          opacity: 0;
+        }
+
+        input[type="radio"]:checked + label {
+          border-bottom: 2px solid #611E2A;
+          animation: highlight 0.5s ease-out;
+        }
+
+        @keyframes highlight {
+          0% {
+            width: 0;
+          }
+          100% {
+            width: 100%;
+          }
+        }
+
+        label {
+          position: relative;
+          display: inline-block;
+          padding-bottom: 3px;
+          font-size: 18px;
+
+          &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background-color: #611E2A;
+            transition: width 0.5s ease-out;
+          }
+        }
+
+        input[type="radio"]:checked + label::before {
+          width: 100%;
+        }
+      }
+
+    }
+  }
+}

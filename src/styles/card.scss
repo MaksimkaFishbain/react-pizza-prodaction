@@ -1,0 +1,69 @@
+@mixin cardForm($margin) {
+
+  .card {
+    margin: $margin;
+    width: 255px;
+    height: 361px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.15);
+
+    .image-block {
+      width: 194px;
+      height: 190px;
+      margin: 5px auto 0 auto;
+      img {
+        width: 200px;
+        height: 200px;
+        z-index: -999;
+      }
+    }
+
+    .info {
+      position: relative;
+      width: 235px;
+      height: 153px;
+      background-color: rgba(140, 50, 19, 0.06);
+      border-radius: 20px;
+      margin: 5px 10px 0 10px;
+
+      .name, .cost {
+        padding: 20px 0 0 20px;
+      }
+
+      p:first-child {
+        font-weight: bold;
+        font-size: 16px
+      }
+
+      p:nth-child(2) {
+        font-size: 18px;
+        color: #84BE51
+      }
+
+      .go-to-checkout {
+        position: absolute;
+        bottom: 10px;
+        right: 10px;
+        width: 131px;
+        height: 35px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+
+        p {
+          text-align: center;
+          padding-top: 7px
+        }
+      }
+
+      .go-to-checkout:hover {
+        cursor: pointer;
+        background-color: black;
+
+        p {
+          color: #FFFFFF
+        }
+      }
+    }
+  }
+}
