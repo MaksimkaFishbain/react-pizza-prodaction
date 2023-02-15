@@ -1,0 +1,56 @@
+.footer-content {
+  display: flex;
+}
+.footer-content p {
+  font-size: 16px;
+  color: #484848;
+}
+.footer-content .footer-grid {
+  display: grid;
+  grid-template-columns: 196px 224px 600px;
+  grid-template-rows: 230px;
+  grid-column-gap: 10px;
+  font-size: 18px;
+}
+.footer-content .footer-grid div {
+  font-size: 18px;
+}
+.footer-content .footer-grid div p {
+  padding-bottom: 26px;
+}
+.footer-content .footer-grid div p:first-child {
+  font-weight: bold;
+}
+.footer-content .footer-grid .footer-contacts img {
+  width: 45px;
+  height: 45px;
+}
+.footer-content .footer-grid .footer-contacts p {
+  padding: 0 0 10px 10px;
+}
+.footer-content .footer-grid .footer-contacts div {
+  padding-bottom: 21px;
+  display: flex;
+}
+.footer-content .footer-grid .footer-contacts div div {
+  display: flex;
+  width: 300px;
+  height: 70px;
+  padding-right: 15px;
+}
+.footer-content .footer-grid .footer-contacts div div .image-block {
+  width: 50px;
+}
+.footer-content .footer-grid .footer-contacts .mobile div .mobile-text {
+  flex-direction: column;
+}
+.footer-content .footer-grid .footer-contacts .mobile div div:last-child p:last-child {
+  font-size: 14px;
+  color: #84BE51;
+  text-decoration: underline;
+}
+.footer-content .footer-grid .footer-contacts .mail p {
+  padding-top: 12px;
+}
+
+/*# sourceMappingURL=footer-content.css.map */
