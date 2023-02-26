@@ -5,6 +5,7 @@
     "price": 24,
     "image": "vetchina-i-sir",
     "category": "meat"
+
   },
   {
     "id": 2,
@@ -12,6 +13,8 @@
     "price": 24,
     "image": "derevenskaya-s-buzheninoi",
     "category": "meat"
+
+
   },
   {
     "id": 3,
@@ -19,6 +22,7 @@
     "price": 20,
     "image": "sirnaya",
     "category": "vegan"
+
   },
   {
     "id": 4,
@@ -26,6 +30,8 @@
     "price": 20,
     "image": "pepperoni",
     "category": "vegan"
+
+
   },
   {
     "id": 5,
@@ -54,6 +60,7 @@
     "price": 31,
     "image": "myasnaya",
     "category": "meat"
+
   },
   {
     "id": 9,
@@ -61,6 +68,8 @@
     "price": 29,
     "image": "burger-pizza",
     "category": "meat"
+
+
   },
   {
     "id": 10,
@@ -82,6 +91,7 @@
     "price": 32,
     "image": "dodo",
     "category": "meat"
+
   },
   {
     "id": 13,
@@ -96,5 +106,13 @@
     "price": 31,
     "image": "arriva",
     "category": "vegan"
+  },
+  {
+    "id": 15,
+    "title": "ШКОЛЬНАЯ!!!!!!",
+    "price": 31,
+    "image": "shkolnaya",
+    "category": "meat"
+
   }
 ]

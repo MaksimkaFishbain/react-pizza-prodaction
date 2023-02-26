@@ -1,3 +1,30 @@
+@import "card";
+@import "auth";
+@import "cart";
+
+
+html {
+  scroll-behavior: smooth;
+  overflow-x: hidden;
+}
+
+.link, a {
+  text-decoration: none;
+  color: white;
+}
+
+.decoration {
+  position: absolute;
+  width: 713px;
+  height: 713px;
+  filter: blur(30px);
+  &.red {
+    background: radial-gradient(50% 50% at 50.02% 51.47%, rgba(231, 78, 19, 0.1) 0%, rgba(231, 78, 19, 0) 100%);
+  }
+  &.green {
+    background: radial-gradient(50% 50% at 50% 50%, rgba(132, 190, 81, 0.3) 0%, rgba(210, 230, 189, 0) 100%);
+  }
+}
 
 * {
   margin: 0;
@@ -6,17 +33,11 @@
   list-style-type: none;
 }
 
-@import "card";
-
 .hideElement {
   display: none;
 }
 
-
-// header
-
 header {
-
   nav {
     display: flex;
     justify-content: center;
@@ -56,7 +77,9 @@ header {
       }
     }
   }
+}
 
+main {
   .welcome-screen {
 
     .onload-image {
@@ -66,6 +89,14 @@ header {
       justify-content: center;
       background: url("../../public/images/first-viewport.png") no-repeat;
       height: 95vh;
+
+      .logo{
+        position: absolute;
+        left: 0;
+        top: -10px;
+        width: 176px;
+        height: auto;
+      }
 
       .top-content {
         display: flex;
@@ -79,7 +110,6 @@ header {
           width: 342px;
           height: 40px;
           background-color: #FFFFFF;
-          border-radius: 20px;
 
           input {
             margin-left: 10%;
@@ -87,6 +117,23 @@ header {
             height: 100%;
             border: none;
             outline: none;
+          }
+
+          .hints {
+            background-color: rgba(255, 255, 255, 0.7);
+            width: 100%;
+            height: auto;
+
+            span {
+              display: flex;
+              justify-content: space-between;
+              padding: 3px 10px;
+              &:hover {
+                cursor: pointer;
+                background-color: #611E2A;
+                color: white;
+              }
+            }
           }
         }
 
@@ -96,11 +143,26 @@ header {
           right: 12%;
 
           div {
+            position: relative;
             width: 40px;
             height: 40px;
             margin-right: 20px;
             border-radius: 50%;
             border: 1px solid #611E2A;
+
+            span {
+              position: absolute;
+              right: -15px;
+              top: -10px;
+              text-align: center;
+              width: 25px;
+              height: 25px;
+              padding: 3px;
+              border-radius: 50%;
+              background: linear-gradient(41deg, rgba(2,0,36,1) 0%, rgba(121,11,9,1) 100%);
+              color: white;
+              font-weight: bold;
+            }
 
             img { padding: 10px 10px }
           }
@@ -121,9 +183,7 @@ header {
       }
     }
   }
-}
 
-main {
 
   .share-block {
     min-height: 744px;
@@ -141,16 +201,6 @@ main {
     .share-content {
       display: flex;
       justify-content: center;
-
-      .cards-list {
-        display: grid;
-        grid-template-columns: 255px 255px 255px 255px;
-        justify-content: space-between;
-        flex-wrap: wrap;
-        width: 65%;
-
-        @include cardForm(auto);
-      }
 
       .arrow {
         display: flex;
@@ -250,10 +300,10 @@ footer {
 
   #gratitude {
     padding-right: 100px;
+
+
   }
   @import "footer-content";
 }
 
 @import "modal";
-
-

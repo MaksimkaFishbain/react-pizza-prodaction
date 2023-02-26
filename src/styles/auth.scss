@@ -1,0 +1,73 @@
+.form-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: calc(100vh - 50px);
+  .form-content {
+    width: 973px;
+    height: 603px;
+    background-color: #611E2A;
+    border-radius: 40px;
+    h1 {
+      font-size: 45px;
+      color: white;
+      text-align: center;
+    }
+    .form-inputs {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: calc(100% - 54px);
+
+      p {
+        color: white;
+        span:hover { text-decoration: underline; cursor: pointer }
+      }
+
+      .input {
+        width: 586px;
+        height: 63px;
+        margin: 8px;
+        background-color: #FFFFFF;
+        border-radius: 20px;
+        input {
+          font-size: 20px;
+          outline: none;
+          margin: 0 20px;
+          border: none;
+          width: 70%;
+          height: 100%;
+        }
+      }
+      .confirm-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        right: 15%;
+        width: 100px;
+        height: 100px;
+        background-color: #611E2A;
+        border-radius: 50%;
+        .confirm-button {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          width: 75px;
+          height: 75px;
+          background-color: #FFFFFF;
+          border-radius: 50%;
+          cursor: pointer;
+          svg { padding-left: 5px; }
+          &:hover {
+            background-color: black;
+            svg { fill: white; }
+          }
+        }
+      }
+    }
+  }
+}

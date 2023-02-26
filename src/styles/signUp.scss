@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
+
+.body-form{
+  font-family: 'Quicksand', serif;
+  background-color: #611E2A;
+  height: 1080px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+
+}
+
+.form {
+
+  color: rgba(0, 0, 0, 0.82);
+  margin: 0;
+  width: 494px;
+  border: 2px solid #ffffff;
+  background-color: rgba(255, 255, 255, 0.32);
+  -webkit-box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 1);
+  -moz-box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 1);
+  box-shadow: 5px 5px 5px -5px rgba(0, 0, 0, 1);
+  padding: 30px;
+  border-radius: 20px;
+  height: auto;
+
+  img{
+
+    width: 256px;
+    height: 256px;
+  }
+
+  button{
+
+    font-weight: 700;
+    margin: 20px auto;
+    display: block;
+    width: auto;
+    padding: 0 15px;
+    height: 45px;
+    border-radius: 20px;
+    border: none;
+    background-color:#611E2A ;
+    color: #FFCB45;
+  }
+
+  button:hover{
+    cursor: pointer;
+    background-color: #FFCB45;
+    color: #611E2A;
+  }
+
+  input{
+    border:none;
+    border-bottom: 2px solid #484848;
+    background-color: rgba(0, 0, 0, 0);
+    width: 400px;
+    height: 63px;
+    color: rgba(0, 0, 0, 0.87);
+    font-size: 23px;
+    outline:none;
+    box-sizing: border-box;
+  }
+
+  input::-webkit-input-placeholder {
+    color: sandybrown;
+    font-family: 'Quicksand', serif;
+    font-size: 23px;
+  }
+
+  span{
+    font-size: 20px;
+  }
+
+  a{
+    color: #ffffff;
+    font-weight: 700;
+    text-decoration: none;
+  }
+
+  a:hover{
+    text-decoration: underline;
+  }
+}
