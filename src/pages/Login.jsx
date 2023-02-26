@@ -17,7 +17,7 @@ const Login = () => {
                                  preserveAspectRatio="xMidYMid meet">
 
                                 <g transform="translate(0.000000,28.000000) scale(0.100000,-0.100000)"
-                                    stroke="none">
+                                   stroke="none">
                                     <path d="M0 140 l0 -139 115 66 c63 36 115 68 115 72 0 3 -52 36 -115 73 l-115 66 0 -138z"/>
                                 </g>
                             </svg>

@@ -4,119 +4,115 @@
     "title": "Ветчина и сыр",
     "price": 24,
     "image": "vetchina-i-sir",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
+
   },
   {
     "id": 2,
     "title": "Деревенская с бужениной",
     "price": 24,
     "image": "derevenskaya-s-buzheninoi",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
+
+
   },
   {
     "id": 3,
     "title": "Сырная",
     "price": 20,
     "image": "sirnaya",
-    "category": "vegan",
-    "isfavorite": false
+    "category": "vegan"
+
   },
   {
     "id": 4,
     "title": "Пепперони",
     "price": 20,
     "image": "pepperoni",
-    "category": "vegan",
-    "isfavorite": false
+    "category": "vegan"
+
+
   },
   {
     "id": 5,
     "title": "Чоризо",
     "price": 20,
     "image": "chorizo",
-    "category": "vegan",
-    "isfavorite": false
+    "category": "vegan"
   },
   {
     "id": 6,
     "title": "Сырный цыпленок",
     "price": 24,
     "image": "sirniy-ciplenok",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
   },
   {
     "id": 7,
     "title": "Карбонара",
     "price": 31,
     "image": "karbonara",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
   },
   {
     "id": 8,
     "title": "Мясная",
     "price": 31,
     "image": "myasnaya",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
+
   },
   {
     "id": 9,
     "title": "Бургер-пицца",
     "price": 29,
     "image": "burger-pizza",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
+
+
   },
   {
     "id": 10,
     "title": "Песто",
     "price": 29,
     "image": "pesto",
-    "category": "vegan",
-    "isfavorite": false
+    "category": "vegan"
   },
   {
     "id": 11,
     "title": "Цыпленок барбекю",
     "price": 32,
     "image": "ciplenok-barbeku",
-    "category": "vegan",
-    "isfavorite": false
+    "category": "vegan"
   },
   {
     "id": 12,
     "title": "Додо",
     "price": 32,
     "image": "dodo",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
+
   },
   {
     "id": 13,
     "title": "Цыплёнок карри",
     "price": 29,
     "image": "ciplenok-karri",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
   },
   {
     "id": 14,
     "title": "Аррива!",
     "price": 31,
     "image": "arriva",
-    "category": "vegan",
-    "isfavorite": false
+    "category": "vegan"
   },
   {
     "id": 15,
     "title": "ШКОЛЬНАЯ!!!!!!",
     "price": 31,
     "image": "shkolnaya",
-    "category": "meat",
-    "isfavorite": false
+    "category": "meat"
+
   }
 ]

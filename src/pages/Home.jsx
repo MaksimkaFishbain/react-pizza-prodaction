@@ -83,49 +83,49 @@ const Home = () => {
             </header>
             <main>
                 <section className="welcome-screen">
-                        <div className="onload-image">
-                            <img src='/images/React.png' alt='logo' className='logo'/>
-                            <div className="top-content">
-                                <div className="search" style={ isStyled.current ? { borderRadius: "20px 20px 0 0" } : { borderRadius: "20px" } }>
-                                    <input value={inputValue} onChange={e => setInputValue(e.target.value)} />
-                                    <img src="/images/lope.png" alt=""/>
-                                    <div className="hints">
-                                        {hintsList().map((item, index) => {
-                                            return (
-                                                <span key={index} onClick={() => moveToChosen(item)}>
+                    <div className="onload-image">
+                        <img src='/images/React.png' alt='logo' className='logo'/>
+                        <div className="top-content">
+                            <div className="search" style={ isStyled.current ? { borderRadius: "20px 20px 0 0" } : { borderRadius: "20px" } }>
+                                <input value={inputValue} onChange={e => setInputValue(e.target.value)} />
+                                <img src="/images/lope.png" alt=""/>
+                                <div className="hints">
+                                    {hintsList().map((item, index) => {
+                                        return (
+                                            <span key={index} onClick={() => moveToChosen(item)}>
                                                         <p>{item.title}</p>
                                                         <p>{item.price}р</p>
                                                 </span>
-                                            )
-                                        })}
-                                    </div>
-                                </div>
-                                <div className="selected-products">
-                                    <Link to={"/favorites"}>
-                                        <div className="favorites">
-                                            <span>{favoritesCount}</span>
-                                            <img src="/images/heart.png" alt=""/>
-                                        </div>
-                                    </Link>
-                                    <Link to={"/cart"}>
-                                        <div className="cart-items">
-                                            <span>{cartItems.length}</span>
-                                            <img src="/images/shopping-cart.png" alt=""/>
-                                        </div>
-                                    </Link>
-                                    <p>{cartItems.reduce((prev, current)=> prev + current.price ,0)} руб</p>
+                                        )
+                                    })}
                                 </div>
                             </div>
-                            <div className="welcome-phrase">
+                            <div className="selected-products">
+                                <Link to={"/favorites"}>
+                                    <div className="favorites">
+                                        <span>{favoritesCount}</span>
+                                        <img src="/images/heart.png" alt=""/>
+                                    </div>
+                                </Link>
+                                <Link to={"/cart"}>
+                                    <div className="cart-items">
+                                        <span>{cartItems.length}</span>
+                                        <img src="/images/shopping-cart.png" alt=""/>
+                                    </div>
+                                </Link>
+                                <p>{cartItems.reduce((prev, current)=> prev + current.price ,0)} руб</p>
+                            </div>
+                        </div>
+                        <div className="welcome-phrase">
                                 <pre>
                                     Наша этюд - приготовить больше блюд.
                                 </pre>
-                                        <pre>
+                            <pre>
                                                    А хотя нет, иди нахуй
                                 </pre>
-                                        <pre>                                   ⓒ Конфуций    </pre>
-                            </div>
+                            <pre>                                   ⓒ Конфуций    </pre>
                         </div>
+                    </div>
                 </section>
                 <section className="share-block" id="sec4">
                     <div className="share-title">

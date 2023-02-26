@@ -43,7 +43,7 @@ const Cart = () => {
             <div className="cart-footer">
 
             </div>
-                {/*<div className="decoration green" style={{ left: "-350px" }}></div>*/}
+            {/*<div className="decoration green" style={{ left: "-350px" }}></div>*/}
         </div>
     );
 };

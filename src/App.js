@@ -6,8 +6,7 @@ import Register from "./pages/Register";
 import Login from "./pages/Login";
 import {useState} from "react";
 import ThemeContext from "./context";
-
-const jsonPizzas = require("./data/cards.json")
+const jsonPizzas = require('./data/cards.json')
 
 function App() {
     const favoritesPizzas = JSON.parse(localStorage.getItem('favorites')) || []
@@ -47,7 +46,7 @@ function App() {
                       <Cart />} />
             </Switch>
         </ThemeContext.Provider>
-    );
+    )
 }
 
 export default App;
